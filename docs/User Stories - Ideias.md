@@ -3,7 +3,6 @@
 **Quero**  Criar uma conta na aplicação  
 **Para**  Guardar as minhas preferências de receitas e ingredientes.
 
-
 ### Inserção de ingredientes
 **Como**  Utilizador  
 **Quero**  Inserir os ingredientes que tenho em casa  
@@ -79,3 +78,7 @@
 **Quero**  Que o chatbot exclua automaticamente receitas que contenham ingredientes a que sou alérgico ou intolerante  
 **Para**  Evitar sugestões que incluam ingredientes que não posso consumir.
 
+### Partilhar receitas com amigos
+**Como**  Utilizador  
+**Quero**  Partilhar receitas sugeridas pelo chatbot diretamente com amigos ou familiares  
+**Para**  Inspirar outras pessoas a cozinharem as mesmas receitas.
