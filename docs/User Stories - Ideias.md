@@ -48,3 +48,34 @@
 **Como**  Utilizador  
 **Quero**  Que o chatbot me ajude a criar uma lista de compras com base nas receitas sugeridas e nos ingredientes que me faltam  
 **Para**  Organizar melhor as minhas compras.
+
+### Recomendações baseadas no tempo disponível
+**Como**  Utilizador  
+**Quero**  Que o chatbot me sugira receitas com base no tempo que tenho disponível para cozinhar  
+**Para**  Poder preparar algo rápido ou mais elaborado conforme a minha disponibilidade.
+
+### Sugestões de receitas com ingredientes alternativos
+**Como**  Utilizador  
+**Quero**  Que o chatbot me sugira alternativas para os ingredientes que não tenho  
+**Para**  Poder cozinhar uma receita, mesmo que me falte algum ingrediente.
+
+### Informação nutricional
+**Como**  Utilizador  
+**Quero**  Ver a informação nutricional de cada receita sugerida  
+**Para**  Poder escolher receitas que sejam saudáveis ou que correspondam aos meus objetivos alimentares.
+
+### Receber receitas sazonais
+**Como**  Utilizador  
+**Quero**  Que o chatbot me sugira receitas com ingredientes sazonais  
+**Para**  Aproveitar os produtos frescos disponíveis na época.
+
+### Receitas recomendadas por popularidade
+**Como**  Utilizador  
+**Quero**  Ver quais receitas são mais populares entre os utilizadores  
+**Para**  Descobrir receitas novas que tenham boas avaliações de outros utilizadores
+
+### Receitas com base em intolerâncias alimentares
+**Como**  Utilizador  
+**Quero**  Que o chatbot exclua automaticamente receitas que contenham ingredientes a que sou alérgico ou intolerante  
+**Para**  Evitar sugestões que incluam ingredientes que não posso consumir.
+
