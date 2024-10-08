@@ -45,6 +45,6 @@
 **Para**  Melhorar as receitas.
 
 ### Integração com lista de compras
-**Como** Utilizador
+**Como**  Utilizador  
 **Quero**  Que o chatbot me ajude a criar uma lista de compras com base nas receitas sugeridas e nos ingredientes que me faltam  
 **Para**  Organizar melhor as minhas compras.
