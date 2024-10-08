@@ -1,7 +1,8 @@
 ### Registo de utilizador
-Como utilizador
-Quero criar uma conta na aplicação
-Para guardar as minhas preferências de receitas e ingredientes.
+**Como**  Utilizador  
+**Quero**  Criar uma conta na aplicação  
+**Para**  Guardar as minhas preferências de receitas e ingredientes.
+
 
 ### Inserção de ingredientes
 Como utilizador
@@ -43,7 +44,7 @@ Como utilizador
 Quero que o chatbot me forneça dicas de substituições de ingredientes ou truques culinários
 Para melhorar as receitas.
 
-# Integração com lista de compras
+### Integração com lista de compras
 Como utilizador
 Quero que o chatbot me ajude a criar uma lista de compras com base nas receitas sugeridas e nos ingredientes que me faltam
 Para que possa organizar melhor as minhas compras.
