@@ -1,4 +1,4 @@
-# ateoreat
+# Ateoreat
 
 Aplicação sobre receitas de culinária
 
