@@ -1,0 +1,25 @@
+# Recomendações baseadas no tempo disponível
+**Como**  Utilizador  
+**Quero**  Que o chatbot me sugira receitas com base no tempo que tenho disponível para cozinhar  
+**Para**  Poder preparar algo rápido ou mais elaborado conforme a minha disponibilidade.
+
+## Critérios de Aceitação
+1. **Entrada do Tempo Disponível**:
+   - O utilizador deve poder indicar o tempo que tem disponível para cozinhar, através de um campo de texto ou um seletor de tempo (ex: 15 minutos, 30 minutos, 1 hora).
+   - O tempo disponível deve incluir tanto o tempo de preparação quanto o tempo de cozimento.
+
+2. **Sugestão de Receitas Baseadas no Tempo**:
+   - O chatbot deve sugerir receitas que possam ser preparadas dentro do tempo indicado pelo utilizador.
+   - As sugestões devem incluir tanto receitas rápidas quanto mais elaboradas, dependendo do tempo disponível.
+
+3. **Feedback de Tempo Insuficiente**:
+   - Se não houver receitas que correspondam ao tempo indicado, o chatbot deve informar o utilizador e sugerir receitas com tempos de preparação mais próximos ou mais rápidos.
+   - O utilizador deve receber uma mensagem clara informando que não há receitas que correspondam exatamente ao tempo escolhido, e oferecer alternativas viáveis.
+
+4. **Filtro de Tempo nas Receitas**:
+   - O utilizador deve ser capaz de aplicar um filtro de tempo ao visualizar receitas sugeridas, para ver apenas as que correspondem ao tempo que tem disponível.
+   - As receitas devem ser organizadas de acordo com o tempo total necessário para a preparação e o cozimento.
+
+5. **Exibição do Tempo nas Receitas**:
+   - Cada receita sugerida deve exibir o tempo total de preparação de forma clara, incluindo uma divisão entre tempo de preparação e tempo de cozimento, se aplicável.
+   - O utilizador deve ser capaz de visualizar rapidamente se a receita sugerida cabe dentro do tempo disponível.
