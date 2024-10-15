@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas com Ingredientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        #start-button, #search-button, #login-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #start-button:hover, #search-button:hover, #login-button:hover {
+            background-color: #45a049;
+        }
+        #search-bar {
+            display: none;
+            margin-top: 20px;
+        }
+        #ingredients {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+        #results {
+            margin-top: 20px;
+            color: #333;
+        }
+        /* Estilo para o botão de login no canto superior direito */
+        #login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="login-button" onclick="window.location.href='login.html'">Login</button>
+
+    <h1>Encontre Receitas com os Seus Ingredientes</h1>
+    <p>Digite os ingredientes que tem em casa.</p>
+    <button id="start-button">Começar</button>
+
+    <div id="search-bar">
+        <input type="text" id="ingredients" placeholder="Digite os ingredientes...">
+        <button id="search-button">Buscar</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('start-button').onclick = function() {
+            document.getElementById('search-bar').style.display = 'block';
+            this.style.display = 'none'; // Esconde o botão "Começar"
+        };
+
+        document.getElementById('search-button').onclick = function() {
+            const ingredients = document.getElementById('ingredients').value;
+            // Aqui você pode adicionar a lógica para buscar receitas usando os ingredientes
+            document.getElementById('results').innerText = 'A buscar receitas para: ' + ingredients;
+        };
+    </script>
+
+</body>
+</html>
