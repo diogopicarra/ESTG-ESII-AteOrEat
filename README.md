@@ -1,4 +1,4 @@
-# AteorEat
+# Ate or Eat
 
 Este projeto consiste numa aplicação sobre receitas de culinária.
 
