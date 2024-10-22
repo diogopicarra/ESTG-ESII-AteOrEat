@@ -1,0 +1,35 @@
+Ideias de métodos de Implementação de AI
+
+1) Processamento de Linguagem Natural (PLN):
+- Análise de Intenções: Identificar o que o utilizador deseja (sugestões de receitas, modos de preparo, etc.).
+- Extração de Entidades: Reconhecer ingredientes e suas quantidades a partir das perguntas dos utilizadores.
+
+2) Recomendações de Receitas:
+- Base de Dados de Receitas: Criar uma coleção de receitas categorizadas por ingredientes, tipo de prato, tempo de preparo, etc.
+- Filtragem Simples: Permitir que o utilizador filtre receitas com base nos ingredientes que possui.
+
+3) Sugestões de Substituição:
+- Alternativas a Ingredientes: Sugerir substituições para ingredientes que o utilizador não tem (ex.: “Podes usar iogurte no lugar de natas.”).
+
+4) Aprendizado com o Utilizador:
+- Preferências de Receitas: Lembrar-se das preferências anteriores dos utilizadores e sugerir receitas semelhantes.
+- Feedback Simples: Permitir que o utilizador classifique as receitas que experimentou (ex.: "Gostei" ou "Não gostei").
+
+5) Estrutura de Conversa:
+- Fluxos de Perguntas e Respostas: Criar uma conversa estruturada onde o utilizador pode fazer perguntas diretas sobre receitas específicas.
+- Sugestões de Passos: Explicar os passos de preparação de forma clara e sequencial.
+
+6) Informações Nutricionais:
+- Informações Básicas: Fornecer dados nutricionais simples sobre as receitas, como calorias ou principais nutrientes.
+
+7) Dicas Culinárias:
+- Oferecer conselhos úteis sobre técnicas de cozinha e armazenamento de alimentos.
+
+8) Temas Especiais:
+- Receitas por Temática: Criar categorias de receitas como "Receitas Rápidas", "Vegetarianas", "Confort Food", etc.
+
+9) Consulta de Ingredientes:
+- Dicionário de Ingredientes: Permitir que os utilizadores consultem informações sobre diferentes ingredientes (ex.: como utilizar, sabor, etc.).
+
+10) Armazenamento de Favoritos:
+- Lista de Favoritos: Permitir que os utilizadores guardem receitas favoritas para fácil acesso futuro.
