@@ -1,4 +1,4 @@
-Objetivo - O sistema será um chatbot interativo que permite aos utilizadores descobrir receitas culinárias com base nos ingredientes que têm em casa. O chatbot irá sugerir receitas, fornecer instruções passo a passo e oferecer dicas sobre como utilizar os ingredientes disponíveis de forma criativa.
+Objetivo - Este sistema consiste num chatbot interativo que permite aos utilizadores descobrir receitas culinárias com base nos ingredientes que têm à sua disposição. O chatbot irá sugerir receitas, fornecer instruções passo a passo e oferecer dicas sobre como utilizar os ingredientes disponíveis de forma criativa.
 
 Escopo - O sistema poderá ser utilizado em diversos contextos, incluindo:
 - Residências
