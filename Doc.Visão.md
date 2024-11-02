@@ -17,7 +17,7 @@ Partes Interessadas (Stakeholders)
 Equipa do Projeto:
 - Catarina Valério (nº58546)
 - Diogo Piçarra (nº60589)
-- Lourenço Nobrega (nº60983)
+- Lourenço Correia (nº60983)
 - João Montalvão (nº60965)
 - Rodrigo Pereira (n60608)
 
