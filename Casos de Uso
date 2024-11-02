@@ -4,13 +4,13 @@ Caso de Uso 1: Consultar Receitas Baseadas em Ingredientes Disponíveis
 •	Ator Principal: Utilizador final (pessoa que cozinha em casa, chef, etc.)
 •	Pré-condições: O utilizador tem acesso ao sistema (conexão à internet) e insere ingredientes disponíveis.
 •	Fluxo Principal:
-1.	O utilizador insere a lista de ingredientes disponíveis na interface.
-2.	O sistema interpreta a lista de ingredientes.
-3.	O chatbot consulta o banco de dados de receitas e gera uma lista de receitas compatíveis com os ingredientes inseridos.
-4.	O chatbot exibe as receitas encontradas e permite que o utilizador selecione uma.
+  1.	O utilizador insere a lista de ingredientes disponíveis na interface.
+  2.	O sistema interpreta a lista de ingredientes.
+  3.	O chatbot consulta o banco de dados de receitas e gera uma lista de receitas compatíveis com os ingredientes inseridos.
+  4.	O chatbot exibe as receitas encontradas e permite que o utilizador selecione uma.
 •	Fluxo Alternativo:
 o	Caso o sistema não encontre receitas compatíveis:
-1.	O chatbot sugere receitas que exigem apenas ingredientes adicionais mínimos ou apresenta dicas de substituição.
+  1.	O chatbot sugere receitas que exigem apenas ingredientes adicionais mínimos ou apresenta dicas de substituição.
 •	Pós-condições: O utilizador vê uma lista de receitas recomendadas, adaptadas aos ingredientes que possui.
 ________________________________________
 Caso de Uso 2: Obter Instruções Interativas para uma Receita Selecionada
@@ -19,12 +19,12 @@ Caso de Uso 2: Obter Instruções Interativas para uma Receita Selecionada
 •	Ator Principal: Utilizador final
 •	Pré-condições: O utilizador já escolheu uma receita.
 •	Fluxo Principal:
-1.	O utilizador seleciona uma receita.
-2.	O chatbot apresenta as instruções de preparo, passo a passo.
-3.	O utilizador navega entre os passos, recebendo orientações detalhadas.
+  1.	O utilizador seleciona uma receita.
+  2.	O chatbot apresenta as instruções de preparo, passo a passo.
+  3.	O utilizador navega entre os passos, recebendo orientações detalhadas.
 •	Fluxo Alternativo:
 o	Se o utilizador solicitar ajuda adicional em um passo específico:
-1.	O chatbot oferece mais informações sobre o passo (exemplo: técnicas de corte, tempo de cozedura).
+  1.	O chatbot oferece mais informações sobre o passo (exemplo: técnicas de corte, tempo de cozedura).
 •	Pós-condições: O utilizador finaliza a receita ou recebe instruções claras para completar o preparo.
 ________________________________________
 Caso de Uso 3: Salvar Receita como Favorita
@@ -33,12 +33,12 @@ Caso de Uso 3: Salvar Receita como Favorita
 •	Ator Principal: Utilizador final
 •	Pré-condições: O utilizador deve estar autenticado para que as receitas favoritas fiquem associadas à sua conta.
 •	Fluxo Principal:
-1.	O utilizador vê uma receita e decide guardá-la.
-2.	O utilizador seleciona a opção "Salvar como Favorita".
-3.	O sistema adiciona a receita à lista de favoritos do utilizador.
+  1.	O utilizador vê uma receita e decide guardá-la.
+  2.	O utilizador seleciona a opção "Salvar como Favorita".
+  3.	O sistema adiciona a receita à lista de favoritos do utilizador.
 •	Fluxo Alternativo:
 o	Se o utilizador já tiver a receita guardada como favorita:
-1.	O chatbot exibe uma mensagem a informar que a receita já está nos favoritos.
+  1.	O chatbot exibe uma mensagem a informar que a receita já está nos favoritos.
 •	Pós-condições: A receita está armazenada na secção de favoritos do utilizador para consultas futuras.
 ________________________________________
 Caso de Uso 4: Avaliar e Comentar Receita
@@ -47,12 +47,12 @@ Caso de Uso 4: Avaliar e Comentar Receita
 •	Ator Principal: Utilizador final
 •	Pré-condições: O utilizador concluiu o preparo da receita e deseja avaliá-la.
 •	Fluxo Principal:
-1.	O utilizador seleciona a opção de avaliação na página da receita.
-2.	O utilizador insere uma classificação (ex. 1 a 5 estrelas) e, opcionalmente, um comentário.
-3.	O sistema regista a avaliação e o comentário associados à receita.
+  1.	O utilizador seleciona a opção de avaliação na página da receita.
+  2.	O utilizador insere uma classificação (ex. 1 a 5 estrelas) e, opcionalmente, um comentário.
+  3.	O sistema regista a avaliação e o comentário associados à receita.
 •	Fluxo Alternativo:
 o	Caso o utilizador não esteja autenticado:
-1.	O chatbot solicita que o utilizador faça login antes de avaliar.
+  1.	O chatbot solicita que o utilizador faça login antes de avaliar.
 •	Pós-condições: A receita recebe uma nova avaliação e, opcionalmente, um comentário, visível para outros utilizadores.
 ________________________________________
 Caso de Uso 5: Sugerir Substituições e Adaptações de Ingredientes
@@ -61,12 +61,12 @@ Caso de Uso 5: Sugerir Substituições e Adaptações de Ingredientes
 •	Ator Principal: Utilizador final
 •	Pré-condições: O utilizador visualiza uma receita e identifica ingredientes que não possui.
 •	Fluxo Principal:
-1.	O utilizador seleciona um ingrediente que deseja substituir.
-2.	O chatbot consulta a base de dados e sugere alternativas para o ingrediente em falta.
-3.	O chatbot exibe as alternativas com instruções de como usá-las.
+  1.	O utilizador seleciona um ingrediente que deseja substituir.
+  2.	O chatbot consulta a base de dados e sugere alternativas para o ingrediente em falta.
+  3.	O chatbot exibe as alternativas com instruções de como usá-las.
 •	Fluxo Alternativo:
 o	Caso não exista uma substituição disponível:
-1.	O chatbot informa que o ingrediente é essencial e recomenda outras receitas.
+  1.	O chatbot informa que o ingrediente é essencial e recomenda outras receitas.
 •	Pós-condições: O utilizador tem à disposição sugestões para adaptar a receita de acordo com os ingredientes disponíveis.
 •	Caso de Uso 6: Registar Novo Utilizador
 •	Nome do Caso de Uso: Registar Novo Utilizador
