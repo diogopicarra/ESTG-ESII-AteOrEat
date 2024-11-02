@@ -1,101 +1,103 @@
 Caso de Uso 1: Consultar Receitas Baseadas em Ingredientes Disponíveis
-  •	Nome do Caso de Uso: Consultar Receitas com Ingredientes
-  •	Objetivo: Sugerir receitas com base nos ingredientes que o utilizador tem à disposição.
-  •	Ator Principal: Utilizador final (pessoa que cozinha em casa, chef, etc.)
-  •	Pré-condições: O utilizador tem acesso ao sistema (conexão à internet) e insere ingredientes disponíveis.
-  •	Fluxo Principal:
-    1.	O utilizador insere a lista de ingredientes disponíveis na interface.
-    2.	O sistema interpreta a lista de ingredientes.
-    3.	O chatbot consulta o banco de dados de receitas e gera uma lista de receitas compatíveis com os ingredientes inseridos.
-    4.	O chatbot exibe as receitas encontradas e permite que o utilizador selecione uma.
-  •	Fluxo Alternativo:
-    o	Caso o sistema não encontre receitas compatíveis:
-      1.	O chatbot sugere receitas que exigem apenas ingredientes adicionais mínimos ou apresenta dicas de substituição.
-  •	Pós-condições: O utilizador vê uma lista de receitas recomendadas, adaptadas aos ingredientes que possui.
+•	Nome do Caso de Uso: Consultar Receitas com Ingredientes
+•	Objetivo: Sugerir receitas com base nos ingredientes que o utilizador tem à disposição.
+•	Ator Principal: Utilizador final (pessoa que cozinha em casa, chef, etc.)
+•	Pré-condições: O utilizador tem acesso ao sistema (conexão à internet) e insere ingredientes disponíveis.
+•	Fluxo Principal:
+1.	O utilizador insere a lista de ingredientes disponíveis na interface.
+2.	O sistema interpreta a lista de ingredientes.
+3.	O chatbot consulta o banco de dados de receitas e gera uma lista de receitas compatíveis com os ingredientes inseridos.
+4.	O chatbot exibe as receitas encontradas e permite que o utilizador selecione uma.
+•	Fluxo Alternativo:
+o	Caso o sistema não encontre receitas compatíveis:
+1.	O chatbot sugere receitas que exigem apenas ingredientes adicionais mínimos ou apresenta dicas de substituição.
+•	Pós-condições: O utilizador vê uma lista de receitas recomendadas, adaptadas aos ingredientes que possui.
 ________________________________________
 Caso de Uso 2: Obter Instruções Interativas para uma Receita Selecionada
-  •	Nome do Caso de Uso: Obter Instruções para Receita
-  •	Objetivo: Guiar o utilizador no preparo de uma receita através de instruções passo a passo.
-  •	Ator Principal: Utilizador final
-  •	Pré-condições: O utilizador já escolheu uma receita.
-  •	Fluxo Principal:
-      1.	O utilizador seleciona uma receita.
-      2.	O chatbot apresenta as instruções de preparo, passo a passo.
-      3.	O utilizador navega entre os passos, recebendo orientações detalhadas.
-  •	Fluxo Alternativo:
-    o	Se o utilizador solicitar ajuda adicional em um passo específico:
-      1.	O chatbot oferece mais informações sobre o passo (exemplo: técnicas de corte, tempo de cozedura).
-  •	Pós-condições: O utilizador finaliza a receita ou recebe instruções claras para completar o preparo.
+•	Nome do Caso de Uso: Obter Instruções para Receita
+•	Objetivo: Guiar o utilizador no preparo de uma receita através de instruções passo a passo.
+•	Ator Principal: Utilizador final
+•	Pré-condições: O utilizador já escolheu uma receita.
+•	Fluxo Principal:
+1.	O utilizador seleciona uma receita.
+2.	O chatbot apresenta as instruções de preparo, passo a passo.
+3.	O utilizador navega entre os passos, recebendo orientações detalhadas.
+•	Fluxo Alternativo:
+o	Se o utilizador solicitar ajuda adicional em um passo específico:
+1.	O chatbot oferece mais informações sobre o passo (exemplo: técnicas de corte, tempo de cozedura).
+•	Pós-condições: O utilizador finaliza a receita ou recebe instruções claras para completar o preparo.
 ________________________________________
 Caso de Uso 3: Salvar Receita como Favorita
-  •	Nome do Caso de Uso: Salvar Receita como Favorita
-  •	Objetivo: Permitir que o utilizador salve receitas de que gosta para fácil acesso no futuro.
-  •	Ator Principal: Utilizador final
-  •	Pré-condições: O utilizador deve estar autenticado para que as receitas favoritas fiquem associadas à sua conta.
-  •	Fluxo Principal:
-    1.	O utilizador vê uma receita e decide guardá-la.
-    2.	O utilizador seleciona a opção "Salvar como Favorita".
-    3.	O sistema adiciona a receita à lista de favoritos do utilizador.
-  •	Fluxo Alternativo:
-      o	Se o utilizador já tiver a receita guardada como favorita:
-        1.	O chatbot exibe uma mensagem a informar que a receita já está nos favoritos.
-  •	Pós-condições: A receita está armazenada na secção de favoritos do utilizador para consultas futuras.
+•	Nome do Caso de Uso: Salvar Receita como Favorita
+•	Objetivo: Permitir que o utilizador salve receitas de que gosta para fácil acesso no futuro.
+•	Ator Principal: Utilizador final
+•	Pré-condições: O utilizador deve estar autenticado para que as receitas favoritas fiquem associadas à sua conta.
+•	Fluxo Principal:
+1.	O utilizador vê uma receita e decide guardá-la.
+2.	O utilizador seleciona a opção "Salvar como Favorita".
+3.	O sistema adiciona a receita à lista de favoritos do utilizador.
+•	Fluxo Alternativo:
+o	Se o utilizador já tiver a receita guardada como favorita:
+1.	O chatbot exibe uma mensagem a informar que a receita já está nos favoritos.
+•	Pós-condições: A receita está armazenada na secção de favoritos do utilizador para consultas futuras.
 ________________________________________
 Caso de Uso 4: Avaliar e Comentar Receita
-  •	Nome do Caso de Uso: Avaliar e Comentar Receita
-  •	Objetivo: Permitir que o utilizador avalie e comente sobre uma receita, ajudando outros utilizadores.
-  •	Ator Principal: Utilizador final
-  •	Pré-condições: O utilizador concluiu o preparo da receita e deseja avaliá-la.
-  •	Fluxo Principal:
-      1.	O utilizador seleciona a opção de avaliação na página da receita.
-      2.	O utilizador insere uma classificação (ex. 1 a 5 estrelas) e, opcionalmente, um comentário.
-      3.	O sistema regista a avaliação e o comentário associados à receita.
-  •	Fluxo Alternativo:
-    o	Caso o utilizador não esteja autenticado:
-      1.	O chatbot solicita que o utilizador faça login antes de avaliar.
-  •	Pós-condições: A receita recebe uma nova avaliação e, opcionalmente, um comentário, visível para outros utilizadores.
+•	Nome do Caso de Uso: Avaliar e Comentar Receita
+•	Objetivo: Permitir que o utilizador avalie e comente sobre uma receita, ajudando outros utilizadores.
+•	Ator Principal: Utilizador final
+•	Pré-condições: O utilizador concluiu o preparo da receita e deseja avaliá-la.
+•	Fluxo Principal:
+1.	O utilizador seleciona a opção de avaliação na página da receita.
+2.	O utilizador insere uma classificação (ex. 1 a 5 estrelas) e, opcionalmente, um comentário.
+3.	O sistema regista a avaliação e o comentário associados à receita.
+•	Fluxo Alternativo:
+o	Caso o utilizador não esteja autenticado:
+1.	O chatbot solicita que o utilizador faça login antes de avaliar.
+•	Pós-condições: A receita recebe uma nova avaliação e, opcionalmente, um comentário, visível para outros utilizadores.
 ________________________________________
 Caso de Uso 5: Sugerir Substituições e Adaptações de Ingredientes
-  •	Nome do Caso de Uso: Sugerir Substituições de Ingredientes
-  •	Objetivo: Fornecer dicas de substituição para ingredientes que o utilizador possa não ter.
-  •	Ator Principal: Utilizador final
-  •	Pré-condições: O utilizador visualiza uma receita e identifica ingredientes que não possui.
-  •	Fluxo Principal:
-    1.	O utilizador seleciona um ingrediente que deseja substituir.
-    2.	O chatbot consulta a base de dados e sugere alternativas para o ingrediente em falta.
-    3.	O chatbot exibe as alternativas com instruções de como usá-las.
-  •	Fluxo Alternativo:
-    o	Caso não exista uma substituição disponível:
-      1.	O chatbot informa que o ingrediente é essencial e recomenda outras receitas.
-        •	Pós-condições: O utilizador tem à disposição sugestões para adaptar a receita de acordo com os ingredientes disponíveis.
-        •	Caso de Uso 6: Registar Novo Utilizador
-        •	Nome do Caso de Uso: Registar Novo Utilizador
-        •	Objetivo: Permitir que um novo utilizador crie uma conta no sistema para aceder às funcionalidades personalizadas, como salvar receitas favoritas e deixar avaliações.
-        •	Ator Principal: Novo Utilizador
-        •	Pré-condições: O utilizador não possui uma conta registada no sistema.
-        •	Fluxo Principal:
-        •	O utilizador acede à página de registo.
-        •	O utilizador insere as informações necessárias para o registo, como nome, email e senha.
-        •	O sistema valida os dados introduzidos (verifica se o email é válido, se a senha atende aos requisitos, etc.).
-        •	O sistema cria uma nova conta e guarda os dados do utilizador.
-        •	O sistema confirma o registo e notifica o utilizador.
-  •	Fluxo Alternativo:
-  •	Dados Inválidos:
-  • Se os dados fornecidos são inválidos (ex.: email já registado ou senha não atende aos critérios), o sistema exibe uma mensagem de erro e solicita correções.
-  •	Pós-condições: O utilizador tem uma conta registada e pode agora fazer login.
-________________________________________
-Caso de Uso 7: Login de Utilizador
-  •	Nome do Caso de Uso: Login de Utilizador
-  •	Objetivo: Permitir que o utilizador aceda à sua conta para utilizar funcionalidades personalizadas, como salvar receitas favoritas ou deixar avaliações.
-  •	Ator Principal: Utilizador Registado
-  •	Pré-condições: O utilizador possui uma conta registada no sistema.
-  •	Fluxo Principal:
-  •	O utilizador acede à página de login.
-  •	O utilizador insere o email e a senha registados.
-  •	O sistema valida as credenciais.
-  •	Caso a validação seja bem-sucedida, o sistema permite o acesso à conta do utilizador e redireciona-o para a página inicial.
+•	Nome do Caso de Uso: Sugerir Substituições de Ingredientes
+•	Objetivo: Fornecer dicas de substituição para ingredientes que o utilizador possa não ter.
+•	Ator Principal: Utilizador final
+•	Pré-condições: O utilizador visualiza uma receita e identifica ingredientes que não possui.
+•	Fluxo Principal:
+1.	O utilizador seleciona um ingrediente que deseja substituir.
+2.	O chatbot consulta a base de dados e sugere alternativas para o ingrediente em falta.
+3.	O chatbot exibe as alternativas com instruções de como usá-las.
 •	Fluxo Alternativo:
-  •	Credenciais Inválidas:
-  •	Se o email ou a senha estiverem incorretos, o sistema exibe uma mensagem de erro e solicita uma nova tentativa.
-  •	O utilizador pode tentar inserir as credenciais novamente ou recuperar a senha.
-  •	Pós-condições: O utilizador está autenticado no sistema e tem acesso a funcionalidades personalizadas.
+o	Caso não exista uma substituição disponível:
+1.	O chatbot informa que o ingrediente é essencial e recomenda outras receitas.
+•	Pós-condições: O utilizador tem à disposição sugestões para adaptar a receita de acordo com os ingredientes disponíveis.
+•	Caso de Uso 6: Registar Novo Utilizador
+•	Nome do Caso de Uso: Registar Novo Utilizador
+•	Objetivo: Permitir que um novo utilizador crie uma conta no sistema para aceder às funcionalidades personalizadas, como salvar receitas favoritas e deixar avaliações.
+•	Ator Principal: Novo Utilizador
+•	Pré-condições: O utilizador não possui uma conta registada no sistema.
+•	Fluxo Principal:
+•	O utilizador acede à página de registo.
+•	O utilizador insere as informações necessárias para o registo, como nome, email e senha.
+•	O sistema valida os dados introduzidos (verifica se o email é válido, se a senha atende aos requisitos, etc.).
+•	O sistema cria uma nova conta e guarda os dados do utilizador.
+•	O sistema confirma o registo e notifica o utilizador.
+•	Fluxo Alternativo:
+•	Dados Inválidos:
+•	Se os dados fornecidos são inválidos (ex.: email já registado ou senha não atende aos critérios), o sistema exibe uma mensagem de erro e solicita correções.
+•	Pós-condições: O utilizador tem uma conta registada e pode agora fazer login.
+________________________________________
+•	Caso de Uso 7: Login de Utilizador
+•	Nome do Caso de Uso: Login de Utilizador
+•	Objetivo: Permitir que o utilizador aceda à sua conta para utilizar funcionalidades personalizadas, como salvar receitas favoritas ou deixar avaliações.
+•	Ator Principal: Utilizador Registado
+•	Pré-condições: O utilizador possui uma conta registada no sistema.
+•	Fluxo Principal:
+•	O utilizador acede à página de login.
+•	O utilizador insere o email e a senha registados.
+•	O sistema valida as credenciais.
+•	Caso a validação seja bem-sucedida, o sistema permite o acesso à conta do utilizador e redireciona-o para a página inicial.
+•	Fluxo Alternativo:
+•	Credenciais Inválidas:
+•	Se o email ou a senha estiverem incorretos, o sistema exibe uma mensagem de erro e solicita uma nova tentativa.
+•	O utilizador pode tentar inserir as credenciais novamente ou recuperar a senha.
+•	Pós-condições: O utilizador está autenticado no sistema e tem acesso a funcionalidades personalizadas.
+
+
