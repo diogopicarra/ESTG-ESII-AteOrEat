@@ -56,7 +56,7 @@ Onde os utilizadores interagem com o sistema, inserindo ingredientes e recebendo
 Chatbot de LLM:
 O núcleo do sistema que processa as entradas dos utilizadores, gerando respostas e sugestões com base nos ingredientes disponíveis.
 
-Banco de Dados de Receitas:
+Base de Dados de Receitas:
 Armazena uma vasta gama de receitas, incluindo detalhes sobre ingredientes, instruções e avaliações.
 
 Integração de API de Ingredientes/Alimentos:
