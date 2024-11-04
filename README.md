@@ -8,7 +8,7 @@ O nosso objetivo é desenvolver um site inovador que permite aos utilizadores in
 Participantes do Projeto
 - Catarina Valério
 - Diogo Piçarra 
-- Lourenço Nobrega 
+- Lourenço Correia 
 - João Montalvão 
 - Rodrigo Pereira 
 
