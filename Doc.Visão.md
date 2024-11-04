@@ -75,6 +75,6 @@ Integração LLM
 A integração do modelo de linguagem (LLM) será utilizada para:
 - Processamento de linguagem natural: compreender e interpretar as entradas dos utilizadores sobre os ingredientes disponíveis.
 - Geração de texto: criar respostas e sugestões de receitas de forma natural e intuitiva.
-- Aprimoramento contínuo: o LLM pode ser ajustado com feedback dos utilizadores para melhorar as suas recomendações e respostas ao longo do tempo.
+- Melhoria contínua: o LLM pode ser ajustado com feedback dos utilizadores para melhorar as suas recomendações e respostas ao longo do tempo.
 - Contextualização: entender o contexto das conversas para oferecer sugestões mais relevantes, considerando preferências dietéticas e restrições alimentares.
-- Considerações FinaisO sistema de chatbot de receitas de culinária tem o potencial de facilitar a experiência culinária dos utilizadores, promovendo a criatividade na cozinha e a utilização eficiente dos ingredientes disponíveis.
+- Considerações Finais: O sistema de chatbot de receitas de culinária tem o potencial de facilitar a experiência culinária dos utilizadores, promovendo a criatividade na cozinha e a utilização eficiente dos ingredientes disponíveis.
