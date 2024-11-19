@@ -1,238 +1,73 @@
-/* Estilos para o corpo da página */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
+  background-color: #9FE870; /* Verde claro */
+  color: #000;
 }
 
-/* Estilos para o menu de navegação */
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 20px 150px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+ 
+}
+
+/* Estilo dos botões de navegação */
 nav {
-  background-color: #6B8E23;
-  padding: 10px 0;
-}
-.nav-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 15px;
 }
 
-.logo {
-  height: 60px; /* Ajuste a altura da imagem conforme necessário */
-  margin-right: 1000px; /* Espaçamento entre o logo e o menu */
-  border: 2px solid rgb(10, 10, 10);
-  border-radius: 65px 65px;
-  align-items: start;
+.nav-button {
+  background-color: #163300; /* Cor do fundo branco */
+  color: #ffffff; /* Cor do verde */
+  border: none;
+  outline: none; /* Remove contorno ao clicar */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 25px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+.nav-button:hover {
+  background-color: #9FE870; /* Cor ao passar o mouse (cinza escuro) */
 }
 
-nav ul li {
-  margin: 0 15px;
+.nav-button:focus {
+  outline: none; /* Remove o contorno ao focar */
 }
 
-nav ul li a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-weight: arial;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #ffffff; 
-}
-
-/* Estilos para o conteúdo principal */
-.container {
-  position:relative;
-  max-width:max-content;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 20px #6B8E23;
+/* Main */
+main {
+  text-align: center;
+  margin-top: 100px;
 }
 
 h1 {
-  text-align: center;
-  color: #000000;
-}
-
-p {
-  line-height: 1.6;
-  color: #000000;
-}
-
-/* Estilos para a barra de pesquisa */
-.search-container {
-  position: absolute;
-  top: 60px; /* Ajuste para posicionar a barra de pesquisa acima da imagem */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  z-index: 10;  
-  padding: 10px;
-  border-radius: 5px;
-  }
+  color: #163300;
+  font-size: 20rem;
+  font-weight: bold; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   
-  .search-input {
-    width: 300px;
-    padding: 10px;
-    border: 3px solid #000000;
-    border-radius: 25px 0 0 25px;
-    outline: none;
-    font-size: 16px;
-    background-color:#9ACD32 ;
-  }
   
-  .search-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 0px 25px 25px 0px;
-    transition: background-color 0.3s;
-  }
-  
-  .search-button:hover {
-    background-color: #6B8E23;
-  }
-  /* Imagem de fundo em toda a largura */
-.image-principal {
-  width: 60%;
-  height: auto; /* Defina a altura conforme desejado */
-  display:block;
-  background-image: url('C:\site\imagem1.png');
-  background-size:auto;
-  background-position:left;
-  margin-top: 0px; /* Espaço entre a barra de pesquisa e a imagem */
-}
-.select-ingrediente-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.select-ingrediente-button {
-  padding: 10px 20px;
-  background-color: #6B8E23; /* Cor de fundo do botão */
-  color: white; /* Cor do texto */
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.select-ingrediente-button:hover {
-  background-color: #9ACD32; /* Cor de fundo ao passar o mouse */
-}
-.ingredient-buttons {
-  display: flex;
-  justify-content: space-around; /* Espaço igual entre os botões */
-  margin-top: 40px;
-}
-
-.ingredient-button {
-  display: flex;
-  flex-direction: column; /* Organiza imagem e texto em coluna */
-  align-items: center; /* Centraliza o conteúdo */
-  cursor: pointer; /* Mostra que é clicável */
-  text-align: center; /* Centraliza o texto abaixo da imagem */
-}
-
-.ingredient-button img {
-  width: 100px; /* Largura fixa para as imagens */
-  height: 100px; /* Altura fixa para as imagens */
-  border-radius: 8px; /* Bordas arredondadas */
-  margin-bottom: 10px; /* Espaço entre a imagem e o texto */
-  transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
-}
-
-.ingredient-button:hover img {
-  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
-}
-
-.ingredient-button p {
-  margin: 0; /* Remove margem padrão do parágrafo */
-  font-weight: bold; /* Torna o texto em negrito */
-}
-
-/*ChatBot*/
-
-.chatbot-container {
-  width: 300px;
-  height: 350px;
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 20px; /* Posiciona o chatbot na parte inferior da tela */
-  right: 20px; /* Posiciona o chatbot na parte direita da tela */
-  background-color: rgb(0, 71, 24);
-}
-
-.chatbot-header {
-  background-color: #6B8E23; /* Cor de fundo da header */
-  color: white;
-  padding: 10px;
-  border-radius: 8px 8px 0 0;
-}
-
-.chatbot-messages {
-  flex: 1;
-  padding: 10px;
-  overflow-y: auto; /* Adiciona rolagem quando necessário */
-}
-
-.chatbot-input-container {
-  display: flex;
-  padding: 10px;
-}
-
-#user-input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-#send-button {
-  padding: 10px 1px;
-  background-color: #6B8E23;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-#send-button:hover {
-  background-color: #556B2F; /* Cor ao passar o mouse */
-}
-
-.message {
-  margin: 5px 0;
-}
-
-.bot-message {
-  background-color: #f1f1f1; /* Cor de fundo da mensagem do bot */
-  padding: 8px;
-  border-radius: 5px;
-}
-
-.user-message {
-  background-color: #6B8E23; /* Cor de fundo da mensagem do usuário */
-  color: white;
-  padding: 8px;
-  border-radius: 5px;
-  align-self: flex-end; /* Alinha à direita */
 }
