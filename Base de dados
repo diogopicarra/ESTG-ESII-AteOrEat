@@ -1,0 +1,234 @@
+-- Create the Recipes table
+CREATE TABLE IF NOT EXISTS Recipes (
+    recipe_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    preparation_time TEXT,
+    ingredients TEXT,
+    instructions TEXT
+);
+
+-- Insert all recipes into the Recipes table
+INSERT INTO Recipes (name, preparation_time, ingredients, instructions) VALUES
+('Frango Assado com Batatas', '1h30min',
+'1 frango inteiro, 1 kg de batatas, 4 dentes de alho, 1 limão, 1 colher de sopa de pimentão-doce, azeite q.b., sal e pimenta q.b., alecrim ou tomilho fresco',
+'Tempere o frango com alho picado, pimentão-doce, sal, pimenta, azeite e sumo de limão. Deixe marinar por 1-2 horas. Corte as batatas e coloque-as numa assadeira com o frango no centro, adicione alecrim ou tomilho, regue com azeite e leve ao forno a 200°C por 1 hora até dourar.'),
+
+('Bacalhau à Brás', '30 minutos',
+'400g de bacalhau desfiado, 500g de batata-palha, 1 cebola, 4 ovos, 3 dentes de alho, azeite q.b., salsa picada q.b., azeitonas pretas q.b., sal e pimenta q.b.',
+'Refogue a cebola e o alho em azeite. Junte o bacalhau e cozinhe por 5 minutos. Adicione a batata-palha, misture. Bata os ovos com sal e pimenta, acrescente ao bacalhau e cozinhe até cremoso. Sirva com salsa e azeitonas.'),
+
+('Almôndegas com Esparguete', '40 minutos',
+'500g de carne picada (vaca ou porco), 1 ovo, 2 dentes de alho picados, 1 cebola picada, 50g de pão ralado, 500g de esparguete, 1 lata de tomate pelado, sal e pimenta q.b., azeite q.b., queijo parmesão ralado',
+'Misture a carne com o ovo, pão ralado, alho picado, sal e pimenta. Forme almôndegas e frite em azeite até dourarem. Refogue a cebola, adicione o tomate pelado e cozinhe por 10-15 minutos. Cozinhe o esparguete e sirva com almôndegas e molho, polvilhado com parmesão.'),
+
+('Bife com Ovo a Cavalo', '20 minutos',
+'4 bifes de vaca, 4 ovos, 4 dentes de alho, azeite q.b., sal e pimenta q.b., batatas fritas (opcional)',
+'Tempere os bifes com sal, pimenta e alho picado. Frite em azeite até o ponto desejado. Frite os ovos separadamente e sirva sobre os bifes com batatas fritas ou arroz.'),
+
+('Arroz de Frango', '40 minutos',
+'1 frango pequeno cortado em pedaços, 1 cebola picada, 2 dentes de alho picados, 300g de arroz, 1 folha de louro, azeite q.b., sal e pimenta q.b., salsa picada',
+'Refogue a cebola e o alho em azeite até dourar. Junte o frango e o louro, deixe dourar. Adicione o arroz e envolva. Acrescente água, tempere e cozinhe até a água ser absorvida. Polvilhe com salsa.'),
+
+('Lasanha à Bolonhesa', '1 hora',
+'500g de carne picada, 1 cebola picada, 2 dentes de alho picados, 1 lata de tomate pelado, 200ml de molho bechamel, placas de lasanha, 200g de queijo ralado, azeite q.b., sal e pimenta q.b.',
+'Refogue a cebola e o alho em azeite, adicione a carne e cozinhe até dourar. Adicione o tomate, tempere e cozinhe por 20 minutos. Monte camadas de molho, placas de lasanha e bechamel, terminando com queijo. Leve ao forno a 180°C por 30 minutos até gratinar.'),
+
+('Bacalhau com Natas', '50 minutos',
+'400g de bacalhau desfiado, 500g de batata, 1 cebola, 3 dentes de alho, 200ml de natas, 200ml de leite, 2 colheres de sopa de farinha, 50g de manteiga, azeite q.b., sal e pimenta q.b., queijo ralado',
+'Cozinhe o bacalhau, frite as batatas em cubos e reserve. Refogue a cebola e o alho, junte o bacalhau e cozinhe por 5 minutos. Prepare o bechamel, misture com as batatas e bacalhau e leve ao forno com queijo ralado até gratinar.'),
+
+-- Repeat the format above for the remaining recipes up to the last one
+
+('Empadão de Carne', '45 minutos',
+'500g de carne picada, 1 cebola picada, 3 dentes de alho picados, 200ml de polpa de tomate, 1 kg de batatas, 200ml de leite, 50g de manteiga, Azeite q.b., Sal e pimenta q.b., Queijo ralado para gratinar',
+'Cozinhe as batatas e faça um puré com o leite e a manteiga. Tempere com sal., Refogue a cebola e o alho em azeite, junte a carne e a polpa de tomate. Deixe cozinhar por 15 minutos e tempere com sal e pimenta., Num tabuleiro, faça uma camada de puré, depois uma de carne e finalize com mais puré., Polvilhe com queijo ralado e leve ao forno a 180°C até dourar.'),
+
+('Salmão Grelhado com Legumes', '30 minutos',
+ '4 lombos de salmão, 2 cenouras, 2 courgettes, 1 pimento vermelho, Azeite q.b, Sal e pimenta q.b., Sumo de 1 limão', 
+ 'Tempere os lombos de salmão com sal, pimenta e sumo de limão, Corte os legumes em tiras e grelhe-os com um fio de azeite até estarem macios, Grelhe o salmão de ambos os lados até estar cozinhado, cerca de 3-4 minutos de cada lado, Sirva o salmão com os legumes grelhados '),
+
+('Costeletas de Porco com Arroz de Cenoura', '35 minutos',
+ '4 costeletas de porco, 2 dentes de alho picados, Azeite q.b., 1 cenoura ralada, 1 chávena de arroz, 2 chávenas de água, Sal e pimenta q.b.',
+ 'Tempere as costeletas com alho, sal e pimenta. Frite em azeite até dourar, Refogue a cenoura ralada num pouco de azeite, junte o arroz e mexa bem, Adicione a água e tempere com sal. Deixe cozinhar até o arroz estar cozido, Sirva as costeletas com o arroz de cenoura'),
+
+('Strogonoff de Frango', '30 minutos',
+ '500g de peito de frango cortado em tiras, 200ml de natas, 1 cebola picada, 2 dentes de alho picados, 200g de cogumelos, 100ml de molho de tomate, Azeite q.b., Sal e pimenta q.b.',
+ 'Refogue a cebola e o alho em azeite, junte o frango e deixe dourar, Adicione os cogumelos e deixe cozinhar por mais 5 minutos, Junte o molho de tomate e as natas, tempere com sal e pimenta e deixe cozinhar até o molho engrossar, Sirva com arroz branco ou batata-palha'),
+
+('Feijoada', '1h30min',
+ '500g de feijão branco ou encarnado, 200g de chouriço, 200g de entremeada de porco, 1 cebola picada, 2 dentes de alho picados, 1 folha de louro, 1 cenoura em rodelas, Polpa de tomate q.b., Azeite q.b., Sal e pimenta q.b.',
+ 'Cozinhe o feijão até ficar macio. Reserve, Refogue a cebola, o alho e o louro em azeite. Junte o chouriço e a entremeada cortados em pedaços e deixe dourar, Adicione a cenoura, a polpa de tomate e um pouco de água, deixando cozinhar por 15 minutos, Acrescente o feijão cozido e deixe apurar. Tempere com sal e pimenta'),
+
+('Arroz de Pato', '1h20min',
+ '1 pato pequeno, 300g de arroz, 1 cebola picada, 2 dentes de alho picados, 1 folha de louro, 100g de chouriço, Azeite q.b., Sal e pimenta q.b.',
+ 'Cozinhe o pato com água, cebola e louro. Desfie a carne e reserve o caldo, Refogue o alho em azeite, junte o arroz e mexa. Adicione o caldo do pato e deixe cozinhar, Num tabuleiro, coloque uma camada de arroz, o pato desfiado e cubra com mais arroz, Decore com rodelas de chouriço e leve ao forno a 180°C até dourar'),
+
+('Polvo à Lagareiro', '1h30min', 
+ '1 polvo médio, 500g de batatas pequenas, 4 dentes de alho, Azeite q.b., Sal e pimenta q.b., Coentros picados',
+ 'Cozinhe o polvo em água por 45 minutos até ficar macio. Corte em pedaços, Cozinhe as batatas com casca e depois dê-lhes um murro para as abrir levemente, Coloque o polvo e as batatas numa assadeira. Regue com bastante azeite, adicione os alhos laminados, sal e pimenta, Leve ao forno a 180°C por 20 minutos. Polvilhe com coentros antes de servir'),
+
+('Cozido à Portuguesa', '2h',
+ '500g de carne de vaca, 300g de frango, 300g de entremeada de porco, 1 chouriço, 1 farinheira, 500g de batatas, 3 cenouras, 300g de couve portuguesa, 200g de feijão branco cozido, Sal q.b.',
+ 'Cozinhe as carnes (vaca, frango, porco, chouriço, farinheira) numa panela grande com água e sal, Retire as carnes e reserve o caldo, No mesmo caldo, cozinhe as batatas, cenouras e couve, Sirva as carnes e os legumes acompanhados de feijão branco cozido'),
+
+('Caldeirada de Peixe', '45 minutos',
+ '1kg de peixe variado (pescada, tamboril, etc.), 2 cebolas, 3 tomates maduros, 1 pimento verde, 4 batatas, 2 dentes de alho, Azeite q.b., 1 folha de louro, Sal e pimenta q.b., Coentros frescos q.b.',
+ 'Numa panela, refogue as cebolas, o alho, o tomate e o pimento em azeite, Adicione as batatas cortadas em rodelas e a folha de louro. Tempere com sal e pimenta, Coloque o peixe por cima dos legumes, cubra com água e deixe cozinhar em lume médio até as batatas estarem cozidas, No final, polvilhe com coentros picados'),
+
+('Lulas Recheadas', '50 minutos',
+ '8 lulas grandes, 200g de carne picada, 1 cebola picada, 2 dentes de alho picados, 1 ovo, 1 colher de sopa de pão ralado, 1 lata de tomate pelado, Azeite q.b., Sal e pimenta q.b., Salsa picada',
+ 'Limpe as lulas e reserve os tentáculos. Pique os tentáculos e refogue com cebola e alho em azeite, Misture a carne picada, o ovo, o pão ralado e os tentáculos refogados. Tempere com sal e pimenta, Recheie as lulas com esta mistura e feche com um palito, Numa panela, refogue cebola e alho, adicione o tomate pelado e as lulas recheadas. Cozinhe por 30 minutos, Sirva com arroz branco'),
+
+('Favas Guisadas com Chouriço', '40 minutos',
+ '500g de favas, 1 chouriço, 1 cebola picada, 2 dentes de alho picados, 100g de entremeada de porco, Azeite q.b., 1 folha de louro, Coentros frescos q.b., Sal e pimenta q.b.',
+ 'Refogue a cebola, o alho e o louro em azeite, Junte o chouriço e a entremeada cortados em pedaços. Deixe dourar, Adicione as favas, cubra com água e tempere com sal e pimenta, Deixe cozinhar até as favas estarem macias, Polvilhe com coentros antes de servir'),
+
+('Espetadas de Carne', '30 minutos + 30 minutos de marinada',
+ '500g de carne de vaca ou porco cortada em cubos, 1 pimento vermelho, 1 cebola, 1 courgette, 2 dentes de alho picados, Azeite q.b., Sal e pimenta q.b., Sumo de limão q.b.',
+ 'Tempere a carne com alho, azeite, sal, pimenta e sumo de limão. Deixe marinar por 30 minutos, Corte os legumes em pedaços e monte as espetadas alternando carne e legumes, Grelhe as espetadas até a carne estar cozida a gosto, Sirva com arroz ou batata frita'),
+
+('Omelete de Queijo e Fiambre','10 minutos',
+ '4 ovos, 100g de fiambre, 100g de queijo, 1 colher de sopa de manteiga, Sal e pimenta q.b.',
+ 'Bata os ovos e tempere com sal e pimenta, Derreta a manteiga numa frigideira e despeje os ovos batidos, Quando começar a cozinhar, coloque o queijo e o fiambre por cima, Dobre a omelete e cozinhe até o queijo derreter, Sirva com salada ou pão'),
+
+('Sopa de Legumes', '30 minutos',
+ '2 cenouras, 2 batatas, 1 courgette, 1 alho-francês, 1 cebola, Azeite q.b., Sal q.b.',
+ 'Descasque e corte todos os legumes em pedaços, Cozinhe os legumes numa panela com água e sal até estarem macios, Triture com a varinha mágica até obter um creme, Adicione um fio de azeite antes de servir'),
+
+('Sopa de Cebola', '35 minutos',
+ '4 cebolas grandes, 2 dentes de alho, 50g de manteiga, 1 litro de caldo de carne, 200g de pão, 100g de queijo ralado, Sal e pimenta q.b.',
+ 'Refogue as cebolas e o alho picado na manteiga até ficarem dourados, Adicione o caldo de carne e deixe ferver por 20 minutos. Tempere com sal e pimenta, Toste o pão e polvilhe com queijo ralado, Sirva a sopa com as fatias de pão tostado e queijo'),
+
+('Sopa de Feijão Verde', '30 minutos',
+ '200g de feijão verde, 2 batatas, 2 cenouras, 1 cebola, Azeite q.b., Sal q.b.',
+ 'Cozinhe as batatas, cenouras e cebola numa panela com água e sal, Triture os legumes cozidos e adicione o feijão verde cortado em tiras, Cozinhe mais 10 minutos até o feijão estar macio, Regue com um fio de azeite antes de servir'),
+
+('Sopa de Abóbora', '30 minutos',
+ '500g de abóbora, 2 batatas, 2 cenouras, 1 cebola, Azeite q.b., Sal q.b.',
+ 'Descasque e corte todos os legumes em pedaços, Cozinhe numa panela com água e sal até estarem macios, Triture com a varinha mágica até obter um creme, Regue com azeite antes de servir'),
+
+('Caldo Verde','30 minutos',
+ '300g de couve galega, 2 batatas, 1 cebola, 1 chouriço, Azeite q.b., Sal q.b.',
+ 'Cozinhe as batatas e a cebola numa panela com água e sal, Triture até formar um creme e adicione a couve cortada em tiras, Cozinhe mais 10 minutos, Adicione o chouriço cortado em rodelas e um fio de azeite antes de servir'),
+
+('Sopa de Alho-Francês', '30 minutos',
+ '2 alhos-franceses, 2 batatas, 1 cenoura, 1 cebola, Azeite q.b., Sal q.b',
+ 'Descasque e corte os legumes em pedaços, Cozinhe numa panela com água e sal até estarem macios, Triture com a varinha mágica até obter um creme, Regue com azeite antes de servir'),
+
+('Sopa de Tomate','30 minutos',
+ '6 tomates maduros, 1 cebola, 2 dentes de alho, 1 colher de sopa de azeite, 1 colher de chá de açúcar, Sal e pimenta q.b.',
+ 'Refogue a cebola e o alho em azeite, Adicione os tomates cortados e o açúcar. Deixe cozinhar por 10 minutos, Triture até formar um creme. Tempere com sal e pimenta, Sirva quente com um fio de azeite'),
+
+('Sopa de Peixe','40 minutos',
+ '300g de peixe (pescada, tamboril, etc.), 1 cebola, 1 tomate,2 batatas, 1 cenoura, Azeite q.b., Sal e pimenta q.b.',
+ 'Cozinhe o peixe e desfie, Cozinhe as batatas, cenoura, cebola e tomate numa panela com água e sal, Triture os legumes e adicione o peixe desfiado, Regue com azeite antes de servir'),
+
+('Mousse de Chocolate', '20 minutos + 3 horas de frigorífico',
+ '200g de chocolate amargo, 4 ovos, 50g de açúcar, 1 pitada de sal',
+ 'Derreta o chocolate em banho-maria e reserve, Separe as claras das gemas. Bata as claras em castelo com uma pitada de sal, Misture as gemas com o chocolate derretido, Incorpore delicadamente as claras batidas na mistura de chocolate, Leve ao frigorífico por pelo menos 3 horas antes de servir'),
+
+(' Pudim de Leite Condensado', '1h10min',
+ '1 lata de leite condensado, 2 latas (medida de leite condensado) de leite, 4 ovos, 1 chávena de açúcar (para o caramelo)',
+ 'Faça um caramelo com o açúcar e forre uma forma de pudim, Bata os ovos, o leite condensado e o leite até ficar homogéneo, Despeje a mistura na forma caramelizada, Cozinhe em banho-maria no forno a 180°C por 50 minutos, Deixe arrefecer antes de desenformar'),
+
+('Arroz Doce', '40 minutos',
+ '200g de arroz carolino, 1 litro de leite, 200g de açúcar, 1 pau de canela, 1 casca de limão, Canela em pó para decorar',
+ 'Cozinhe o arroz em água até ficar quase macio. Escorra a água, Adicione o leite, o pau de canela e a casca de limão e deixe cozinhar até o arroz absorver o leite, Acrescente o açúcar e mexa bem. Cozinhe por mais 5 minutos, Coloque o arroz doce em taças e decore com canela em pó'),
+
+('Bolo de Bolacha', '20 minutos + 4 horas de frigorífico',
+ '200g de bolacha Maria, 200g de manteiga, 150g de açúcar, 2 gemas de ovo, 1 chávena de café forte',
+ 'Bata a manteiga com o açúcar até obter um creme fofo. Adicione as gemas e misture bem, Molhe as bolachas no café e monte o bolo em camadas, alternando bolachas e creme, Leve ao frigorífico por 4 horas antes de servir'),
+
+('Tarte de Maçã', ' 40 minutos',
+ '1 base de massa folhada, 4 maçãs, 100g de açúcar, 1 colher de sopa de canela, Sumo de 1 limão',
+ 'Descasque e corte as maçãs em fatias finas. Regue com sumo de limão, Estenda a massa folhada numa forma de tarte e pique o fundo com um garfo, Disponha as fatias de maçã por cima da massa e polvilhe com açúcar e canela, Leve ao forno a 180°C por 30 minutos até a massa ficar dourada'),
+
+('Leite Creme','30 minutos',
+ '1 litro de leite, 6 gemas de ovo, 200g de açúcar, 1 colher de sopa de farinha maizena, Casca de 1 limão, Açúcar para caramelizar',
+ 'Leve o leite ao lume com a casca de limão, Misture as gemas, o açúcar e a maizena até formar um creme, Adicione o leite quente à mistura de gemas, mexendo sempre, Volte a levar ao lume, mexendo até engrossar, Deixe arrefecer, polvilhe com açúcar e caramelize com um maçarico ou no forno'),
+
+('Rabanadas', '20 minutos',
+ '1 pão cacete (de véspera), 500ml de leite, 3 ovos, 200g de açúcar, Canela em pó para polvilhar, Óleo para fritar',
+ 'Corte o pão em fatias grossas, Aqueça o leite e molhe as fatias de pão nele, Passe as fatias nos ovos batidos e frite em óleo quente até dourarem, Polvilhe com açúcar e canela antes de servir'),
+
+('Salame de Chocolate', '20 minutos + 4 horas de frigorífico',
+ '200g de chocolate em pó, 200g de bolacha Maria, 100g de manteiga, 100g de açúcar, 1 ovo',
+ 'Esmague as bolachas grosseiramente, Misture o chocolate, o açúcar e a manteiga derretida, Adicione o ovo e as bolachas à mistura e mexa bem, Forme um rolo com a mistura, embrulhe em papel vegetal e leve ao frigorífico por 4 horas'),
+
+('Pastéis de Nata', '25 minutos'
+ '1 base de massa folhada, 250ml de natas, 150g de açúcar, 4 gemas de ovo, 1 colher de sopa de farinha, Casca de limão',
+ 'Forre formas de queques com a massa folhada, Misture as gemas, o açúcar, a farinha e as natas e leve ao lume com a casca de limão, mexendo até engrossar, Encha as formas com o creme e leve ao forno a 220°C até dourarem.'),
+
+('Queijadas de Leite', '35 minutos',
+ '500ml de leite, 200g de açúcar, 50g de manteiga, 4 ovos, 100g de farinha',
+ 'Misture o açúcar com a manteiga derretida, os ovos e a farinha, Adicione o leite aos poucos e mexa bem, Coloque a mistura em formas e leve ao forno a 180°C por 25 minutos até dourar'),
+
+('Tarte de Amêndoa', '35 minutos',
+ '1 base de massa folhada, 200g de amêndoa laminada, 150g de açúcar, 100g de manteiga, 200ml de natas',
+ 'Forre uma forma com a massa folhada e pique o fundo com um garfo, Leve a manteiga, o açúcar e as natas ao lume até derreter, Adicione a amêndoa laminada e misture, Despeje sobre a massa folhada e leve ao forno a 180°C por 25 minutos'),
+
+('Bolo de Iogurte', '40 minutos',
+ '1 iogurte natural, 3 ovos, 2 medidas (do copo de iogurte) de açúcar, 2 medidas de farinha, 1 medida de óleo, 1 colher de chá de fermento',
+ 'Misture os ovos, o açúcar e o iogurte, Adicione o óleo, a farinha e o fermento e misture bem, Coloque a massa numa forma untada e leve ao forno a 180°C por 30 minutos'),
+
+('Creme de Brócolos', '30 minutos',
+ '300g de brócolos, 2 batatas, 1 cebola, 2 dentes de alho, Azeite q.b., Sal q.b.',
+ 'Cozinhe os brócolos, as batatas, a cebola e o alho numa panela com água e sal, Triture com a varinha mágica até obter um creme, Adicione um fio de azeite antes de servir'),
+
+('Pão de Ló', '35 minutos',
+'6 ovos, 250g de açúcar, 150g de farinha, 1 colher de chá de fermento',
+'Bata os ovos com o açúcar até obter uma mistura fofa. Adicione a farinha e o fermento, misturando delicadamente. Leve ao forno a 180°C por 25 minutos.'),
+
+('Sopa de Cenoura', '30 minutos',
+ '4 cenouras, 2 batatas, 1 cebola, Azeite q.b., Sal q.b.',
+ 'Descasque e corte as cenouras, batatas e cebola em pedaços, Cozinhe os legumes numa panela com água e sal até ficarem macios, Triture com a varinha mágica até obter um creme, Adicione um fio de azeite antes de servir'),
+
+('Polvo à Galega', '45 minutos',
+ '1 polvo (1,5kg), 4 batatas, Azeite q.b., Pimentão doce (colorau) q.b., Sal grosso q.b., 2 dentes de alho, Salsa picada q.b.',
+ 'Cozinhe o polvo numa panela de pressão por cerca de 20 minutos, Cozinhe as batatas com casca em água com sal até ficarem macias, Corte o polvo em pedaços e coloque num prato, Regue com azeite, polvilhe com pimentão doce, alho picado e salsa picada, Sirva com as batatas cozidas'),
+
+('Bacalhau à Brás', '30 minutos',
+ '400g de bacalhau desfiado, 4 batatas, 1 cebola, 3 ovos, Azeite q.b., Salsa picada q.b., Azeitonas pretas q.b., Sal e pimenta q.b.',
+ 'Corte as batatas em palha e frite-as, Refogue a cebola em azeite até ficar dourada e junte o bacalhau desfiado. Deixe cozinhar, Adicione as batatas fritas e os ovos batidos, mexendo até os ovos cozinharem, Tempere com sal e pimenta e polvilhe com salsa picada e azeitonas'),
+
+('Bolachas de Manteiga', '30 minutos',
+ '200g de manteiga, 100g de açúcar, 300g de farinha, 1 ovo, 1 colher de chá de essência de baunilha',
+ 'Misture a manteiga com o açúcar até obter um creme, Adicione o ovo e a essência de baunilha, misturando bem, Junte a farinha aos poucos até formar uma massa homogénea, Forme bolinhas com a massa e disponha num tabuleiro, Leve ao forno a 180°C por 15 minutos'),
+
+('Francesinha', '50 minutos',
+ 'Para o recheio:, 2 fatias de pão de forma, 1 bife de vaca (ou outra carne, como salsichas ou fiambre), 1 linguiça, 1 salsicha fresca, Queijo (como queijo da Serra ou queijo de sandwich), Para o molho:, 1 cebola, 2 dentes de alho, 1 folha de louro, 1/2 copo de vinho tinto, 1/2 copo de cerveja, 1 colher de sopa de molho de tomate, 1 colher de sopa de pimenta, 1 colher de sopa de mostarda, 1 colher de sopa de farinha, Caldo de carne (opcional), Sal e pimenta a gosto, Para a montagem:, Batatas fritas'
+ 'Preparar o molho:, Refogue a cebola picada e o alho em um pouco de azeite até ficarem dourados, Adicione a folha de louro, o vinho tinto e a cerveja. Deixe ferver, Acrescente o molho de tomate, a mostarda e a pimenta. Cozinhe em fogo baixo por cerca de 15 minutos, Se preferir um molho mais espesso, adicione a farinha dissolvida em um pouco de água e mexa bem. Tempere com sal e pimenta a gosto. Reserve, Montar a francesinha:, Em uma fatia de pão, coloque o bife grelhado, a linguiça e a salsicha fresca. Cubra com a outra fatia de pão, Coloque fatias de queijo por cima do pão, Gratinar:, Leve ao forno pré-aquecido (200°C) até o queijo derreter e ficar dourado, Servir:, Coloque a francesinha em um prato, cubra generosamente com o molho quente e sirva com batatas fritas ao lado'),
+
+('Bifanas à Portuguesa', '30 minutos + 30 minutos de marinada',
+ '500g de bifanas de porco, 4 dentes de alho, 100ml de vinho branco, 50ml de azeite, 1 folha de louro, Sal e pimenta q.b., 1 colher de chá de colorau',
+ 'Tempere as bifanas com alho, sal, pimenta, colorau, vinho branco e a folha de louro. Deixe marinar por 30 minutos, Aqueça o azeite numa frigideira e frite as bifanas até estarem douradas, Sirva as bifanas com pão ou batata frita'),
+
+('Lasanha de Carne', ' 1 hora',
+ '500g de carne picada, 1 cebola, 2 dentes de alho, 1 lata de tomate pelado, 300g de placas de lasanha, 200g de queijo ralado, 200ml de molho bechamel, Azeite q.b., Sal e pimenta q.b.',
+ 'Refogue a cebola e o alho em azeite e adicione a carne picada. Deixe cozinhar, Junte o tomate pelado, tempere com sal e pimenta, e deixe apurar, Monte a lasanha numa travessa, alternando camadas de carne, placas de lasanha, e bechamel, Termine com queijo ralado e leve ao forno a 180°C por 40 minutos'),
+
+('Empadão de Carne', '50 minutos',
+ '500g de carne picada, 1 cebola, 2 dentes de alho, 2 colheres de sopa de polpa de tomate, 6 batatas, 200ml de leite, 1 colher de sopa de manteiga, Sal e pimenta q.b.', 
+ 'Cozinhe as batatas e faça um puré com o leite e a manteiga, Refogue a cebola e o alho em azeite, adicione a carne picada e a polpa de tomate. Tempere com sal e pimenta, Num tabuleiro, coloque uma camada de puré, depois a carne e termine com mais puré, Leve ao forno a 180°C por 20 minutos até dourar'),
+
+('Lasanha Vegana', '1 hora',
+ '9 folhas de lasanha (sem ovos), 1 courgette, 1 beringela, 1 pimento vermelho, 1 cebola, 2 dentes de alho, 400g de tomate triturado, 200g de tofu (esfarelado), 200g de espinafre fresco, Sal e pimenta a gosto, Azeite, Manjericão fresco (opcional)',
+ 'Pré-aqueça o forno a 180°C, Refogue a cebola e o alho picados em azeite até ficarem transparentes, Adicione a courgette, a beringela e o pimento cortados em cubos e cozinhe até amolecer, Misture o tomate triturado e tempere com sal e pimenta. Cozinhe por 10 minutos, Em um refratário, coloque uma camada de molho, seguida de folhas de lasanha, uma camada de tofu esfarelado e uma camada de espinafre, Repita as camadas até acabar os ingredientes, terminando com molho, Leve ao forno por cerca de 30 minutos. Deixe arrefecer antes de servir'),
+
+('Arroz de Lentilhas','40 minutos',
+ '1 xícara de lentilhas, 1 xícara de arroz, 1 cebola, 2 dentes de alho, 1 cenoura, 1 pimento, 4 xícaras de caldo de legumes, Sal e pimenta a gosto, Azeite',
+ 'Lave as lentilhas e cozinhe em água até ficarem macias. Reserve, Em uma panela, refogue a cebola e o alho picados em azeite, Adicione a cenoura e o pimento cortados em cubos e cozinhe por 5 minutos, Adicione o arroz e refogue por mais 2 minutos, Acrescente as lentilhas cozidas e o caldo de legumes. Tempere com sal e pimenta, Cozinhe em fogo baixo até que o arroz esteja pronto. Sirva quente'),
+
+('Curry de Grão-de-Bico', '35 minutos',
+ '1 lata de grão-de-bico, 1 cebola, 2 dentes de alho, 1 pedaço de gengibre, 1 lata de leite de coco, 2 colheres de sopa de curry em pó, 1 pimento vermelho, Espinafre (opcional), Azeite, Sal a gosto',
+ 'Refogue a cebola, o alho e o gengibre picados em azeite até dourar, Adicione o curry em pó e cozinhe por 1 minuto, Misture o grão-de-bico, o pimento cortado em cubos e o leite de coco. Cozinhe por 10 minutos, Adicione o espinafre nos últimos minutos. Tempere com sal e sirva quente'),
+
+('Burgers de Feijão Preto', '30 minutos',
+ '1 lata de feijão preto, 1/2 cebola, 1/2 pimento, 1 dente de alho, 1/2 xícara de aveia, 1 colher de sopa de cominho, Sal e pimenta a gosto, Azeite',
+ 'Escorra e lave o feijão. Amasse-o em uma tigela, Refogue a cebola, o pimento e o alho picados em azeite até ficarem macios, Adicione os legumes ao feijão amassado, junto com a aveia, o cominho, sal e pimenta. Misture bem, Forme hambúrgueres e cozinhe em uma frigideira com azeite até dourarem de ambos os lados. Sirva com pão e salada'),
+
+('Salada de Quinoa com Legumes', '40 minutos',
+ '1 xícara de quinoa, 2 xícaras de água, 1 cenoura ralada, 1 pepino, 1 tomate, 1/2 cebola roxa, Salsinha picada, Suco de 1 limão, Azeite, Sal e pimenta a gosto',
+ 'Cozinhe a quinoa em água por cerca de 15 minutos, ou até a água ser absorvida. Deixe arrefecer, Em uma tigela, misture a quinoa cozida com a cenoura ralada, pepino, tomate e cebola picados, Adicione a salsinha, o suco de limão, azeite, sal e pimenta. Misture bem e sirva fresca');
+
+-- Ensure all recipes are correctly included in the script.
