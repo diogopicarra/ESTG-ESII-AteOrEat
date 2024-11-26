@@ -1,73 +1,237 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilo do body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #9FE870; /* Verde claro */
-  color: #000;
+    font-family: Arial, sans-serif;
+    background-color: #9FE870; /* Verde claro */
+    color: #000;
+    scroll-behavior: smooth; /* Rolagem suave */
 }
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-  padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 150px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9FE870; /* Verde escuro */
+    z-index: 1000;
+    transition: top 0.3s ease; /* Transição suave */
+}
+header.hidden {
+    top: -100px; /* Esconde o header */
 }
 
 .logo img {
-  width: 80px;
-  height: 80px;
-  border-radius: 25px;
- 
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
 }
 
 /* Estilo dos botões de navegação */
 nav {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .nav-button {
-  background-color: #163300; /* Cor do fundo branco */
-  color: #ffffff; /* Cor do verde */
-  border: none;
-  outline: none; /* Remove contorno ao clicar */
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 25px; /* Bordas arredondadas */
-  transition: background-color 0.3s ease;
+    background-color: #163300; /* Cor do fundo verde */
+    color: #ffffff; /* Cor branca */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease;
 }
 
 .nav-button:hover {
-  background-color: #9FE870; /* Cor ao passar o mouse (cinza escuro) */
+    background-color: #9FE870; /* Cor ao passar o mouse */
 }
 
-.nav-button:focus {
-  outline: none; /* Remove o contorno ao focar */
+/* Seções */
+section {
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Main */
-main {
+#home {
+    background-color: #9FE870; /* Verde claro */
+}
+#home h1 {
+    color: #163300;
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#receitas {
+    background-color: #ffffff; /* branco  */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .receitas {
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .receitas .title h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Estilo do menu */
+  .menu {
+    list-style: none;
+    padding: 20px;
+    display: none; /* Escondido inicialmente */
+    justify-content: center;
+    background-color: #163300;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px; /* Distância entre o título e o menu */
+    border-radius: 50px;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Estilo do botão */
+  #toggle-menu {
+    background-color: #163300;
+    color: white;
+    font-size: 18px;
+    padding: 40px 40px;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    display: block;
+    margin: 20px 40px 20px 40px;
+  }
+  
+  #toggle-menu:hover {
+    background-color: #9FE870;
+  }
+  
+  @media (max-width: 1000px) {
+    #toggle-menu {
+      display: block;
+    }
+  }
+  
+
+
+#sobre-nos {
+    background-color: #FFABAB; /* Rosa claro */
+}
+
+
+#login {
+    background-color: #9FE870; /* Azul claro */
+}
+
+
+
+.login-section {
+  border: 2px  #000000;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 350px;
   text-align: center;
-  margin-top: 100px;
 }
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 18px;
+  color: #163300;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #163300;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #429700;
+}
+
+#error-message {
+  margin-top: 15px;
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+
 
 h1 {
-  color: #163300;
-  font-size: 20rem;
-  font-weight: bold; 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  
-  
+    color: #163300;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #000;
 }
